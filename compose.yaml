@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    container_name: vite-template-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/workspaces
+      - /workspaces/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev -- --host 0.0.0.0
