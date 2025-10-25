@@ -1,10 +1,10 @@
-import '@mantine/core/styles.css';
+import "@mantine/core/styles.css";
 
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
-import { theme } from '../src/theme';
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import { theme } from "../src/theme";
 
 export const parameters = {
-  layout: 'fullscreen',
+  layout: "fullscreen",
   options: {
     showPanel: false,
     // @ts-expect-error – storybook throws build error for (a: any, b: any)
@@ -15,22 +15,23 @@ export const parameters = {
 
 export const globalTypes = {
   theme: {
-    name: 'Theme',
-    description: 'Mantine color scheme',
-    defaultValue: 'light',
+    name: "Theme",
+    description: "Mantine color scheme",
+    defaultValue: "light",
     toolbar: {
-      icon: 'mirror',
+      icon: "mirror",
       items: [
-        { value: 'light', title: 'Light' },
-        { value: 'dark', title: 'Dark' },
+        { value: "light", title: "Light" },
+        { value: "dark", title: "Dark" },
       ],
     },
   },
 };
 
 export const decorators = [
+  // biome-ignore lint/suspicious/noExplicitAny: testing
   (renderStory: any, context: any) => {
-    const scheme = (context.globals.theme || 'light') as 'light' | 'dark';
+    const scheme = (context.globals.theme || "light") as "light" | "dark";
     return (
       <MantineProvider theme={theme} forceColorScheme={scheme}>
         <ColorSchemeScript />
