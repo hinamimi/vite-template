@@ -1,9 +1,11 @@
 # Vite template
 
-## Features
+## 特徴
 
-This template comes with the following features:
+このテンプレートは以下の技術スタックを使用しています:
 
+- [Docker](https://docs.docker.com/)
+- [Mantine](https://mantine.dev/)
 - [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Storybook](https://storybook.js.org/)
