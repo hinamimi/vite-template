@@ -15,16 +15,15 @@ export function Welcome() {
       >
         Welcome to{" "}
         <Text inherit variant="gradient" component="span" gradient={{ from: "pink", to: "yellow" }}>
-          Mantine
+          Vite Template
         </Text>
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Vite project includes a minimal setup, if you want to learn more on Mantine +
-        Vite integration follow{" "}
+        Mantine + Viteのテンプレートプロジェクトです。ViteとMantineの詳細については
         <Anchor href="https://mantine.dev/guides/vite/" size="lg">
-          this guide
+          ガイド
         </Anchor>
-        . To get started edit pages/Home.page.tsx file.
+        を見てください。
       </Text>
     </>
   );
