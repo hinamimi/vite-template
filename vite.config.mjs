@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  base: "/vite-template/",
   plugins: [react(), tsconfigPaths()],
   test: {
     globals: true,
