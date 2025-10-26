@@ -10,7 +10,7 @@ export const parameters = {
     // @ts-expect-error – storybook throws build error for (a: any, b: any)
     storySort: (a, b) => a.title.localeCompare(b.title, undefined, { numeric: true }),
   },
-  backgrounds: { disable: true },
+  backgrounds: { disabled: true },
 };
 
 export const globalTypes = {
