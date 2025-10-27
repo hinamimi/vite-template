@@ -1,5 +1,7 @@
 # Vite template
 
+GO TO PAGE → https://hinamimi.github.io/vite-template/
+
 ## 特徴
 
 このテンプレートは以下の技術スタックを使用しています:
