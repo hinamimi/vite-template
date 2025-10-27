@@ -20,7 +20,8 @@
         "EditorConfig.EditorConfig",
         "mhutchie.git-graph",
         "eamodio.gitlens",
-        "biomejs.biome"
+        "biomejs.biome",
+        "saoudrizwan.claude-dev"
       ]
     }
   },
